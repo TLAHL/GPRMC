@@ -1,0 +1,12 @@
+D:\vs程序\GPRMC\GPRMC\bin\Debug\GPRMC.exe.config
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\Interop.GfxUIStarterLib.dll
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.csproj.ResolveComReference.cache
+D:\vs程序\GPRMC\GPRMC\bin\Debug\GPRMC.exe
+D:\vs程序\GPRMC\GPRMC\bin\Debug\GPRMC.pdb
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.ForMain.resources
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.Properties.Resources.resources
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.UcWave.resources
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.csproj.GenerateResource.Cache
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.exe
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.pdb
+D:\vs程序\GPRMC\GPRMC\obj\x86\Debug\GPRMC.csprojResolveAssemblyReference.cache
