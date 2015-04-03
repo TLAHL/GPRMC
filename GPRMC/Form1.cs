@@ -164,7 +164,7 @@ namespace GPRMC
         }
 
 
-        
+
         public void draw()
         {
             #region 画航向图
@@ -175,7 +175,7 @@ namespace GPRMC
                 if (split_crouse[index] != string.Empty)
                 {
                     var ff = float.Parse(split_crouse[index]);
-                    
+
                     ucWave_Course.AddPoint(index, ff);
                 }
                 else
@@ -210,145 +210,10 @@ namespace GPRMC
 
 
 
-            #region 画航速图
 
-            ////*****************************************************
-            ////将所需航速数组存入arraylist
-            //for (int index = 0; index < split_crouse.Count; index++)
-            //{
-            //    if (split_crouse[index] != string.Empty)
-            //    {
-            //        var ff = float.Parse(split_crouse[index]);
-            //        ucWave_Course.AddPoint(index, ff);
-            //    }
-            //    else
-            //    {
-            //        ucWave_Course.AddPoint(index, (float)0.0);
-            //    }
-            //}
-            ////画航向图
-            //ucWave_Course.DrawXY();
-            #endregion
 
 
         }
-
-
-        #region WUYONG
-        //int i = 0;
-            //var temp_width = (int)((ucWave_Course.Width - 70) / (16.0 * 60.0));//每一个点的X轴位移
-            ////将GroundCourse转化为float型
-            //if (split_crouse[i] != string.Empty)
-            //{
-            //    GroundCrouse = float.Parse(split_crouse[i]);
-            //}
-            //var temp_Height = (float)(((ucWave_Course.Height - 60) / 360.0) * temp_width);//每一次右移的宽度
-            //float true_height = (float)(ucWave_Course.Height - (GroundCrouse + 30));//每一个点的转化高度
-            //#region
-            //////g.DrawRectangle(pen,new Rectangle(iInex,iInex,300,400));
-            //if (iInex == 0)
-            //{
-            //    ucWave_Course.ClearAllPoints();
-            //}
-            //if (iInex == 961)
-            //{
-            //    ucWave_Course.ClearAllPoints();
-            //    iInex = 0;
-            //}
-            //////float IInex = float.Parse(iInex.ToString());
-            //////ucWave_Course.DrawPoint(iInex,true_height);   
-            //ucWave_Course.AddPoint(iInex, true_height);
-            //ucWave_Course.Refresh();
-            //#endregion
-            ////******************************************************************************
-            //iInex += temp_width;
-            //i++;
-           
-        
-        //string GroundSpeed;
-        //string GroundCourse;
-        //string str = "GPRMC";
-        //int index = 0;
-        //int temp_index = 0;
-        //int iInex = 35;
-
-        //private void timer2_Tick(object sender, EventArgs e)
-        //{
-        //    //if (split != null)  // 文件中的有效报文不为空
-        //    //{
-        //    //    // 报文没有处理完
-        //    //    if (index < split.Length)
-        //    //    {
-        //    //        split_temp = split[index].Split(new Char[] { ',', '*' });
-        //    //        if (split_temp[0] == str)//判断报文类型
-        //    //        {
-        //    //            // 获取了时间信息（是否有判空需求）
-        //    //            string ymdhmsTime = string.Concat(split_temp[9], "-", split_temp[1]);
-        //    //            label_End.Text = DateTime.ParseExact(ymdhmsTime, "ddMMyy-hhmmss.ff", CultureInfo.InvariantCulture).ToString();
-        //    //            // 获取了航速和航向的字段,用于画点
-        //    //            GroundSpeed = split_temp[7];
-        //    //            GroundCourse = split_temp[8];
-        //    //            var temp_width = (int)((ucWave_Course.Width - 70) / (16.0 * 60.0));//每一个点的X轴位移
-
-        //    //            #region 航向
-        //    //            if (GroundCourse != string.Empty) // 不能传入空字符串
-        //    //            {
-        //    //                // 将GroundCourse转化为float型
-        //    //                float temp_course = float.Parse(GroundCourse);
-        //    //                var temp_Height = (float)(((ucWave_Course.Height - 60) / 360.0) * temp_course);//每一次右移的宽度
-        //    //                float true_height = (float)(ucWave_Course.Height - (temp_Height + 30));//每一个点的转化高度
-
-
-
-
-
-        //    //                #region
-        //    //                ////g.DrawRectangle(pen,new Rectangle(iInex,iInex,300,400));
-        //    //                ////if (iInex == 35)
-        //    //                ////{
-        //    //                ////    ucWave_Course.ClearAllPoints();
-        //    //                ////}
-        //    //                ////if (iInex == 996)
-        //    //                ////{
-        //    //                ////    ucWave_Course.ClearAllPoints();
-        //    //                ////    iInex = 35;
-        //    //                ////}
-        //    //                ////float IInex = float.Parse(iInex.ToString());
-        //    //                ////ucWave_Course.DrawPoint(iInex,true_height);   
-        //    //                //ucWave_Course.AddPoint(iInex, true_height);
-        //    //                //ucWave_Course.Refresh();
-        //    //                #endregion
-        //    //                //******************************************************************************
-        //    //                iInex += temp_width;
-        //    //                label_Start.Text = temp_index.ToString();
-        //    //                temp_index++;
-        //    //            }
-        //    //            else
-        //    //            {
-        //    //                // 如果该点为空，必须向后移动相应的位置，确保不影响后续的点的坐标
-        //    //                iInex += temp_width;
-        //    //                temp_index++;
-        //    //                label_Start.Text = temp_index.ToString();
-
-        //    //            }
-        //    //            #endregion
-
-        //    //        }
-        //    //        index++;
-        //    //    }
-        //    //    // 如果报文处理完了
-        //    //    else
-        //    //    {
-        //    //        ucWave_Course.DrawXY();
-        //    //        ucWave_Course.Refresh();
-        //    //        Thread.Sleep(5000);
-        //    //    }
-        //    //}
-
-        //}
-
-
-        #endregion
 
 
     }
